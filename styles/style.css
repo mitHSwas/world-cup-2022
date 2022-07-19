@@ -1,0 +1,232 @@
+/*-------- google fonts poppins ---------*/
+@import url('https://fonts.googleapis.com/css2?family=Gantari&family=Poppins:wght@500;600&family=Rubik&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gantari', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/*--------- Top banner styles ----------*/
+.top-banner {
+    display: flex;
+    background-color: #161616;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+
+.banner-heading {
+    margin: 70px;
+    margin-right: 25px;
+    color: #FFFFFF;
+    width: 45%
+}
+
+.banner-headline {
+    padding: 0;
+    margin: 0;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.link-button {
+    padding: 16px 25px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background: #DD0000;
+    border-radius: 5px;
+}
+
+.banner-heading p {
+    margin-bottom: 30px;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/*--------- league section styles ---------*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.league-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #161616;
+    border-radius: 10px;
+}
+
+.league-details div {
+    margin: 30px;
+}
+
+.update {
+    padding: 15px;
+    text-decoration: none;
+    color: #161616;
+    background-color: white;
+}
+
+.common {
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    width: 70%;
+}
+
+.blog {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.blog-details {
+    padding: 20px;
+}
+
+.blog-details p {
+    color: #161616;
+    font-weight: 600;
+}
+
+.blog-img img {
+    width: 100%;
+}
+
+.blog-comment {
+    display: flex;
+    justify-content: space-between;
+    color: #161616B2;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #161616;
+    max-width: 100%;
+}
+
+footer h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 0;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 80%;
+}
+
+footer div a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.special {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    .container {
+        max-width: 600px;
+        margin: 30px auto;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .league-details {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #161616;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+        width: 100%;
+    }
+
+    footer div {
+        flex-wrap: wrap;
+    }
+
+    .special {
+        display: block;
+        width: 80px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+
+    .container {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .league-details {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #161616;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 24px;
+        width: 100%;
+    }
+
+    footer div {
+        flex-wrap: wrap;
+    }
+}
